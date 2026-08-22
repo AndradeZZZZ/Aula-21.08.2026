@@ -1,0 +1,118 @@
+<!--
+Esta página irá conter uma página de inscrição para o evento Dia Tech, na faculdade UniAnchieta, com um
+formulário validado pelo HTML5 e uma seção multimídia
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+<form action="inscricao.php" method="post">
+
+    <h1>Formulário de Inscrição para o evento Dia Tech</h1> 
+    
+
+        <img src="https://static.wixstatic.com/media/d4fc22_47287667e98e41c4975ed2ed57870255~mv2.png/v1/fill/w_299,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d4fc22_47287667e98e41c4975ed2ed57870255~mv2.png"
+        width="300"
+        alt="Logo da faculdade UniAnchieta">
+
+    <br><br>
+
+    <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value="nome" required>
+    </div>
+    <br>
+
+    <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" value="email" required>
+    </div>
+    <br>
+
+    <div class="campo">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Formato: (00) 00000-0000," pattern="\(\d{2}\) \d{4,5}-\d{4}" value="telefone" required>
+    </div>
+    <br>
+
+    <div class="campo">
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" min="16" max="120" placeholder="Digite sua idade" style="width: 150px;" value="18" required>
+    </div>
+    <br>
+
+    <div class="campo">
+        <p>Você é um estudante da UniAnchieta?</p>
+
+        <label for="sim">Sim</label>
+        <input type="radio" id="sim" name="possivel estudante" value="sim" >
+
+        <label for="nao">Não</label>
+        <input type="radio" id="nao" name="possivel estudante" value="nao">
+    </div>
+    <br>
+
+    <div class="campo">
+        <p>Qual é seu gênero?</p>
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="homem">
+
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="feminino" name="genero" value="mulher">
+
+        <label for="nao-binario">Não-binário</label>
+        <input type="radio" id="nao-binario" name="genero" value="nao-binario">
+
+        <label for="transgenero">Transgênero</label>
+        <input type="radio" id="transgenero" name="genero" value="transgenero">
+
+        <label for="outro">Outro</label>
+        <input type="radio" id="outro" name="genero" value="outro">
+
+        <label for="prefiro-nao-informar">Prefiro não informar</label>
+        <input type="radio" id="prefiro-nao-informar" name="genero" value="prefiro-nao-informar">
+        
+    </div>
+    <br>
+
+    <div class="campo">
+        <p>Quais dessas áreas da programação tem interesse?</p>
+
+        <label for="back-end">Back-End</label>
+        <input type="checkbox" id="back-end" name="back-end" value="back-end">
+
+        <label for="front-end">Front-end</label>
+        <input type="checkbox" id="front-end" name="front-end" value="front-end">
+
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" id="mobile" name="mobile" value="mobile">
+    </div>
+    <br>
+
+    <div class="campo">
+        <label for="linguagem">Entre essas linguagens, qual sua favorita? </label>
+        <select id="linguagem" name="linguagem">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+        </select>
+    </div>
+    <br>
+
+    <div class="campo">
+        <label for="mensagem">Qual sua Expectativa com o Evento?</label>
+        <br>
+        <textarea id="mensagem" name="mensagem" minlength="10" maxlength="200" rows="10" cols="60"></textarea>
+    </div>
+    <br>
+
+    <button type="submit">Enviar formulário</button>
+
+</form>
+</body>
+</html>
