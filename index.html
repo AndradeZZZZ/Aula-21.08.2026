@@ -15,7 +15,7 @@ formulário validado pelo HTML5 e uma seção multimídia
 
     <h1>Formulário de Inscrição para o evento Dia Tech</h1> 
     
-    <figure>
+    <figure id="logo">
         <img src="https://static.wixstatic.com/media/d4fc22_47287667e98e41c4975ed2ed57870255~mv2.png/v1/fill/w_299,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d4fc22_47287667e98e41c4975ed2ed57870255~mv2.png"
              width="300"
              alt="Logo da faculdade UniAnchieta">
@@ -26,29 +26,29 @@ formulário validado pelo HTML5 e uma seção multimídia
 
     <div class="campo">
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" value="nome" required>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
     </div>
     <br>
 
     <div class="campo">
         <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" value="email" required>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
     </div>
     <br>
 
     <div class="campo">
         <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="Formato: (00) 00000-0000," pattern="\(\d{2}\) \d{4,5}-\d{4}" value="telefone" required>
+        <input type="tel" id="telefone" name="telefone" placeholder="Formato: (00) 00000-0000," pattern="\(\d{2}\) \d{4,5}-\d{4}" required>
     </div>
     <br>
 
     <div class="campo">
         <label for="idade">Idade</label>
-        <input type="number" id="idade" name="idade" min="16" max="120" placeholder="Digite sua idade" style="width: 150px;" value="18" required>
+        <input type="number" id="idade" name="idade" min="16" max="120" placeholder="Digite sua idade" style="width: 150px;" required>
     </div>
     <br>
 
-    <div class="campo">
+    <div class="checkbox">
         <p>Você é um estudante da UniAnchieta?</p>
 
         <label for="sim">Sim</label>
@@ -59,7 +59,7 @@ formulário validado pelo HTML5 e uma seção multimídia
     </div>
     <br>
 
-    <div class="campo">
+    <div class="checkbox">
         <p>Qual é seu gênero?</p>
 
         <label for="masculino">Masculino</label>
@@ -83,7 +83,7 @@ formulário validado pelo HTML5 e uma seção multimídia
     </div>
     <br>
 
-    <div class="campo">
+    <div class="checkbox">
         <p>Quais dessas áreas da programação tem interesse?</p>
 
         <label for="back-end">Back-End</label>
@@ -97,7 +97,7 @@ formulário validado pelo HTML5 e uma seção multimídia
     </div>
     <br>
 
-    <div class="campo">
+    <div class="checkbox">
         <label for="linguagem">Entre essas linguagens, qual sua favorita? </label>
         <select id="linguagem" name="linguagem">
             <option value="python">Python</option>
@@ -107,7 +107,7 @@ formulário validado pelo HTML5 e uma seção multimídia
     </div>
     <br>
 
-    <div class="campo">
+    <div class="campo-texto">
         <label for="mensagem">Qual sua Expectativa com o Evento?</label>
         <br>
         <textarea id="mensagem" name="mensagem" minlength="10" maxlength="200" rows="10" cols="60"></textarea>
